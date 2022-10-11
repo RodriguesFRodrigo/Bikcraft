@@ -79,3 +79,37 @@ p {
     border-radius: 4px;
     text-transform: uppercase;
 }
+
+.content_subtitle {
+    font-size: 64px;
+    text-transform: uppercase;
+    color: rgba(0, 0, 0, 0.2);
+    text-align: right;
+    padding: 40px;
+    align-self: center;
+}
+
+.content_advantages {
+    background: #fff;
+    padding: 40px;
+}
+
+.advantages__item {
+    display: grid;
+    grid-template-columns: auto 1fr;
+    gap: 10px 20px;
+    padding: 20px;
+}
+
+.advantages__item p {
+    grid-column: 2;
+}
+
+.footer {
+    background: #fff;
+    width: 100%;
+    text-align: center;
+    padding: 40px;
+    /* To avoid width 100% with padding*/
+    box-sizing: border-box;
+}
