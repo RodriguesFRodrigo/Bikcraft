@@ -97,6 +97,11 @@ p {
     right: -1.88rem;
 }
 
+.content_cover img {
+    height: 100%;
+    object-fit: cover;
+}
+
 .introduction__button {
     background: #e21;
     color: #fff;
@@ -153,4 +158,46 @@ p {
     padding: 2.5rem;
     /* To avoid width 100% with padding*/
     box-sizing: border-box;
+}
+
+/* Break point abaixo de 1000px */
+@media(max-width: 1000px) {
+    .content__responsive {
+        grid-template-columns: 1fr;
+    }
+
+    .content_subtitle {
+        text-align: center;
+    }
+}
+
+@media(max-width: 600px) {
+    body {
+        gap: 30px;
+        margin-top: 20px;
+    }
+
+    .header {
+        gap: 30px;
+    }
+
+    .content {
+        grid-template-columns: 1fr;
+    }
+
+    .content__introduction {
+        text-align: left;
+        justify-items: left;
+    }
+
+    .content__introduction::after {
+        display: none;
+    }
+
+}
+
+@media(max-width: 500px) {
+    .content_subtitle {
+        font-size: 2rem;
+    }
 }
